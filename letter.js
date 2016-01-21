@@ -11,5 +11,3 @@ function Letter(let) {
     }
   }
 }
-
-var letter1 = new Letter();

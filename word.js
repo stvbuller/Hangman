@@ -23,17 +23,17 @@ function Word(wrd) {
     }
     return this.whatToReturn; 
   }
-  //array_name.every(function() { ….//yourcode });
+  //if the appear property of all letters is equal to true set found = true
   this.didWeFindTheWord = function() {
-    // if all letter objects have the true value in their  
-    //appear property, found = true
-    // this.lets.every(function(curLets) {
-    //   if (curLets.appear === true){
-    //    this.found = true;
-    //    }
-    //})
-      return this.found;
+    //array_name.every(function() { ….//yourcode });
+    this.lets.every(function(curLets) {
+      if (curLets.appear == true){
+        this.found = true;
+      }
+    });
+    return this.found;
   }
+  //create a string of the characters guessed in the array using letterRender()
   this.wordRender = function() {
     this.str = "";
     var string1 = "";
@@ -44,11 +44,10 @@ function Word(wrd) {
     return this.str;
   }
 }
-debugger
 
-//this are used to test the functions in word.js
-// var word1 = new Word("nnqn");
-// word1.getsLets();
-// var resultLetterCheck = word1.checkIfLetterFound("n");
-// var resultWordCheck = word1.didWeFindTheWord();
-// var resultWordRender = word1.wordRender();
+//these are used to test the functions in word.js
+var word1 = new Word("nnnn");
+word1.getsLets();
+var resultLetterCheck = word1.checkIfLetterFound("n");
+var resultWordCheck = word1.didWeFindTheWord();      //this is not working
+var resultWordRender = word1.wordRender();

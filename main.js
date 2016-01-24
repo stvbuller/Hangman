@@ -35,9 +35,9 @@ var game = function() {
       if (this.guessesRemaining === 0 && this.currentWrd === false){
         keepPromptingUser();
       } else if (this.guessesRemaining === 0){ 
-        console.log("Game over bro " + this.currentWrd);
+        console.log("Game over bro " + currentWrd);
       } else {
-        console.log(this.currentWrd.wordRender());
+        //console.log(this.currentWrd.wordRender());
       }
     }); 
   } 

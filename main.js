@@ -24,20 +24,19 @@ var game = function() {
         self.guessesRemaining -= 1;
       } else {
         console.log("You guessed right!")
-        // if (self.currentWrd.didWeFindTheWord() === true) {
-        //   console.log("You won!")
-        //   return 1;
-        // }
+        if (self.currentWrd.didWeFindTheWord() === true) {
+          console.log("You won!")
+          return 1;
+        }
       }
       console.log("Guesses remaining: " + self.guessesRemaining);
       console.log(self.currentWrd.wordRender());
-      if (self.guessesRemaining > 0 && self.currentWrd === false){
+      if (self.guessesRemaining > 0 || self.currentWrd === false){
         self.keepPromptingUser();        
-      } else if (this.guessesRemaining === 0){ 
-        console.log("Game over bro " + currentWrd);
+      } else if (self.guessesRemaining === 0){ 
+        console.log("Game over bro " + self.currentWrd.word);
       } else {
         console.log(self.currentWrd.wordRender());
-        self.keepPromptingUser();
       }
     }); 
   } 

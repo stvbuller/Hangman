@@ -46,9 +46,10 @@ function Word(wrd) {
   }
 }
 
+debugger
 //these are used to test the functions in word.js
-// var word1 = new Word("nnnn");
-// word1.getLets();
-// var resultLetterCheck = word1.checkIfLetterFound("n");
-// var resultWordCheck = word1.didWeFindTheWord();      //this is not working
-// var resultWordRender = word1.wordRender();
+var word1 = new Word("nnnn");
+word1.getLets();
+var resultLetterCheck = word1.checkIfLetterFound("n");
+var resultWordCheck = word1.didWeFindTheWord();      //this is not working
+var resultWordRender = word1.wordRender();

@@ -5,7 +5,7 @@ function Word(wrd) {
   this.word = wrd;
   this.lets = [];
   this.found = false;
-  this.getsLets = function() {
+  this.getLets = function() {
     //create Letter objects for each letter in the word
     //and put the objects in an arry
     for (var i = 0; i < this.word.length; i++) {               
@@ -23,6 +23,7 @@ function Word(wrd) {
     }
     return this.whatToReturn; 
   }
+  //*******  didWeFindTheWord is not working 
   //if the appear property of all letters is equal to true set found = true
   this.didWeFindTheWord = function() {
     //array_name.every(function() { ….//yourcode });
@@ -46,8 +47,8 @@ function Word(wrd) {
 }
 
 //these are used to test the functions in word.js
-var word1 = new Word("nnnn");
-word1.getsLets();
-var resultLetterCheck = word1.checkIfLetterFound("n");
-var resultWordCheck = word1.didWeFindTheWord();      //this is not working
-var resultWordRender = word1.wordRender();
+// var word1 = new Word("nnnn");
+// word1.getLets();
+// var resultLetterCheck = word1.checkIfLetterFound("n");
+// var resultWordCheck = word1.didWeFindTheWord();      //this is not working
+// var resultWordRender = word1.wordRender();

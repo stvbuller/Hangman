@@ -24,7 +24,7 @@ var game = function() {
         self.guessesRemaining -= 1;
       } else {
         console.log("You guessed right!")
-        if (self.currentWrd.didWeFindTheWord() === true) {
+        if (self.currentWrd.didWeFindTheWord() === true) { //** didWeFindTheWord is not working
           console.log("You won!")
           return 1;
         }

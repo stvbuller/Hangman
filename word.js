@@ -1,4 +1,4 @@
-var Letter = require("./letter.js");
+  var Letter = require("./letter.js");
 module.exports = Word;
 
 function Word(wrd) {
@@ -34,6 +34,14 @@ function Word(wrd) {
     });
     return this.found;
   }
+  //*** alternate didWeFindTheWord function suggested by TA
+  //*** curLets is not defined error
+  // this.didWeFindTheWord = function() {
+  //   this.found = this.lets.every(function(curLet) {
+  //     return curLets.appear; // console.log(this.found) "true"
+  //     });
+  //   return this.found // console.log(this.found) "true"
+  // }
   //create a string of the characters guessed in the array using letterRender()
   this.wordRender = function() {
     this.str = "";

@@ -34,6 +34,17 @@ function Word(wrd) {
     });
     return this.found;
   }
+//*** alternate didWeFindTheWord function created by ajurado2204
+  // this.didWeFindTheWord = function(){
+  //   var result = this.lets.every(function(curLet){
+  //     if(curLet.appear === true){
+  //       curLet.found = true;
+  //       return curLet.found;
+  //     }
+  //   });
+
+    return result;
+  }
   //*** alternate didWeFindTheWord function suggested by TA
   //*** curLets is not defined error
   // this.didWeFindTheWord = function() {
